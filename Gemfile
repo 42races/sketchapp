@@ -24,3 +24,6 @@ gem 'angular-ui-bootstrap-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'carrierwave'
 gem 'slim'
+
+# for heroku
+gem 'rails_12factor', group: :production
