@@ -1,0 +1,12 @@
+.navbar
+  .logo Sketchapp
+  form
+    input.input-box type="text" name="query"
+    button.btn.btn-small.btn-info type="submit" Search
+
+  a.btn.btn-small.btn-info ng-controller="SketchesController" ng-click="new();" New Sketch
+  .dropdown-menu ng-if="userSignedIn"
+    a Dropdown
+    ul
+      li.menu-item Edit profile
+      li.menu-item Logout

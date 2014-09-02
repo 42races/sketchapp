@@ -14,6 +14,10 @@
 //= require jquery_ujs
 //= require angular
 //= require angular-ui-router.min
-//= require angular-ui-bootstrap
+//= require angular-ui-bootstrap-tpls
 //= require angular-rails-templates
-//= require_tree .
+//= require ng-rails-csrf
+//= require router
+//= require_tree ./controllers
+//= require_tree ./factories
+//= require_tree ./templates

@@ -27,3 +27,4 @@ gem 'slim'
 
 # for heroku
 gem 'rails_12factor', group: :production
+gem 'ng-rails-csrf'

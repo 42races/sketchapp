@@ -1,0 +1,10 @@
+.modal-container ng-controller="ModalController"
+  form ng-submit="create();" ng-controller="SketchesController"
+    .modal-header
+      .modal-title New Sketch
+    .modal-body
+      input type="file" name="sketch" ng-model="sketch"
+      input type="text" name="description" ng-model="description"
+    .modal-footer
+      a.btn.btn-primary ng-click="dismiss();" Cancel
+      button.btn.btn-primary type="submit" Post

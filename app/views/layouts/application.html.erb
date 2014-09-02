@@ -6,7 +6,10 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <ui-view></ui-view>
+
+<body ng-controller='AppController'>
+  <%= render 'shared/navbar' %>
+  <div ui-view></div>
+  <%= render 'shared/footer' %>
 </body>
 </html>

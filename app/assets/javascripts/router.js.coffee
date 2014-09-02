@@ -1,4 +1,4 @@
-window.App = angular.module('App', ['ui.router', 'templates', 'ui.bootstrap']);
+window.App = angular.module('App', ['ui.router', 'templates', 'ui.bootstrap', 'ng-rails-csrf']);
 
 App.config([
   '$stateProvider', '$urlRouterProvider', (stateProvider, urlRouterProvider) ->

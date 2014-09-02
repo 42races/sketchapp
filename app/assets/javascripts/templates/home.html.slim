@@ -1,8 +1,8 @@
-h2 Home page
-a.btn.btn-default
-  span.glyphicon.glyphicon-heart
-  | Login with email address
+h2 Popular sketches
 
-button type="button" class="btn btn-default btn-lg"
-  span class="glyphicon glyphicon-heart"
-  | Star
+ul ng-controller="SketchesController"
+  li ng-repeat="sketch in sketches"
+    img ng-src="{{sketch.sketch.url}}"
+    label
+      | {{sketch.description}}
+    a ng-click="remove($index);" Remove
